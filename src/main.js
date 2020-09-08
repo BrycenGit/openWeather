@@ -55,9 +55,10 @@ $(document).ready(function() {
       $('.feelsLike').text(`The temperature feels like ${Math.round(response.main.feels_like * (9/5) - 459.67)} degrees.`);
       $('.windSpeed').text(`The wind is ${response.wind.speed} mph.`);
       $('.description').text(`The weather is `+ response.weather[0].main + `.`);
-    }
+    } 
   
   })
 });
 // T(°F) = T(K) × 9/5 - 459.67
 // let Farenheight =(`(${response.main.temp} * (9/5)) - 459.67`)
+// pro.openweathermap.org/data/2.5/forecast/hourly?q={city name}&appid={your api key}
